@@ -5,18 +5,10 @@ import Header from './components/Header';
 
 export default function Home() {
   const speakers = [
-    { name: 'Balaji Rao', image: 'Balaji Rao.jpg', title: 'AVP- India & SAARC', company: 'Commvault' },
-    { name: 'Bhavyan Mehta', image: 'Bhayvan Mehta.jpg', title: 'VP Engineering', company: 'Commvault' },
-    { name: 'Vijay Anand', image: 'Vijay Anand.jpg', title: 'Director, Sales Engineering', company: 'Commvault' },
-    // { name: 'Aneesh Dhawan', image: 'Aneesh Dhawan.png', title: 'Director Sales- India & SAARC', company: 'Commvault' },
-    // { name: 'Amit Mahajan', image: 'Amit Mahajan.jpg', title: 'Senior DIrector, Development', company: 'Commvault' },
-    // { name: 'Sachin Bawse', image: 'Sachin Bawse.jpg', title: 'GTM Specialist Solution Architect India', company: 'AWS' },
-    // { name: 'Varun Kumar', image: 'Varun Kumar.png', title: 'Manager - Solutions Engineering', company: 'NetApp' },
-    // { name: 'Andy Walsky', image: 'Andy Walsky.jpg', title: 'VP of EMEA & APAC Sales', company: 'Exagrid' },
-    // { name: 'Haresh Chandnani', image: 'Haresh Chandnani.jpg', title: 'Systems Engineer', company: 'Pure Storage' },
-    // { name: 'Rakesh Thayyil', image: 'Rakesh Thayyil.jpg', title: 'Associate Director- Research', company: 'Think Teal' },
-    // { name: 'Shikha Singh', image: 'Shikha Singh.jpg', title: 'Emcee', company: '' },
-    // { name: 'Zaheer Khan', image: 'Zaheer Khan.jpg', title: 'Former Indian Cricketer', company: '' },
+    { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan.png', title: 'Head of Solution Engineering', company: 'Commvault' },
+    // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
+    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan.png', title: 'VP APAC', company: 'Commvault' },
+    { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra.png', title: 'Country Manager', company: 'IDC Indonesia' },
   ];
 
   const platinumSponsors = [
@@ -55,89 +47,110 @@ export default function Home() {
 
       {/* Overview Section */}
       <section id="overview" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-            <div className="text-center mb-8">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                7 May 2026 | 08:30 – 14:00 WIB
-              </p>
-              <p className="text-base sm:text-lg text-gray-600 font-medium">
-                Ballroom 1 & 2 A, Fairmont Hotel Jakarta
-              </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+            {/* Left Column - Text Content */}
+            <div>
+              <div className="mb-4">
+                <p className="text-lg sm:text-lg font-bold text-gray-800">
+                  7 May 2026 | 08:30 – 14:00 WIB
+                </p>
+                <p className="text-lg sm:text-lg font-bold text-gray-800">
+                  Ballroom 1 & 2 A, Fairmont Hotel Jakarta
+                </p>
+              </div>
+
+              <div className="space-y-6 text-gray-700 leading-relaxed text-base sm:text-lg">
+                <p>
+                  Join us on May 7, 2026, as we usher in a new era of cyber resilience — cloud-native, cyber-ready, and ready for Agentic AI. Experience a transformational event that will redefine how businesses recover, secure, and scale across all clouds.
+                </p>
+
+                <p>
+                  The event will feature a host of global cyber resilience leaders, including Commvault APAC leaderships and industry experts from some of the biggest brands in technology and cyber security.
+                </p>
+
+                <div className="mt-4">
+                  <h2 className="text-lg font-bold text-gray-800 mb-8">Why Attend?</h2>
+                  <p>
+                    SHIFT is where resilience leaders gather to drive transformation. Whether you’re a CISO securing AI-driven systems, an IT leader streamlining multi-cloud recovery, or a partner— there’s something for everyone. You’ll leave prepared for advanced, AI-related threats across all clouds, plus a plan to deploy modern cyber resilience tools and strategies.
+                  </p>
+                </div>
+
+                <div className="mt-4">
+                  <h2 className="text-lg font-bold text-gray-800 mb-4">Featured Topics</h2>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>AI Governance &amp; Security</li>
+                    <li>Business Growth &amp; Resilience</li>
+                    <li>Cyber Resilience &amp; Recovery</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-6 text-gray-700 leading-relaxed text-sm sm:text-base">
-              <p>
-                Join us on May 7, 2026, as we explore a new era of cyber resilience—born in the cloud, designed to help fortify against cyber threats, and built for the evolving landscape of Agentic AI. Be part of a high-impact experience that can help reshape how organizations protect, recover, and scale efficiently across every cloud environment.
-              </p>
-
-              <p>
-                Discover Commvault Cloud Unity™, our innovative platform that helps integrate data protection, data security, and recovery across your entire hybrid cloud estate. It&apos;s designed to help simplify complex environments, help fortify your defenses against advanced AI-powered threats, and support rapid, reliable recovery when it matters most.
-              </p>
-
-              <p>
-                Hear from an exceptional lineup of global cyber resilience visionaries, including Commvault® leaders and renowned experts from some of the world&apos;s most influential technology and cybersecurity brands.
-              </p>
-
-              <div className="mt-10">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Why Attend?</h2>
-                <p>
-                  SHIFT is the destination for resilience leaders who want to drive real change in their organizations. It brings together CISOs helping secure AI-powered environments, IT leaders aiming to optimize multi-cloud recovery, and partners looking to innovate—helping every attendee to find relevant value.
-                </p>
-                <p className="mt-4">
-                  You will walk away better equipped to address advanced AI-powered threats across every cloud, along with actionable insights to help roll out modern cyber resilience technologies and strategies tailored to your business.
-                </p>
-              </div>
-
-              <div className="flex justify-center mt-10">
+            {/* Right Column - Registration */}
+            <div className="flex flex-col items-center  self-start">
+              <h3 className="text-3xl font-base text-gray-900 mb-6">Registration Open</h3>
+              <a
+                href="https://event.kimcommunication.com/SHIFTCommvault"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Sign Up Now
+              </a>
+              <p className="mt-6 text-sm text-gray-500 leading-relaxed">
+                Commvault respects your privacy and will not share your information with any third-parties. Read our{' '}
                 <a
-                  href="https://event.kimcommunication.com/fcf94f65"
+                  href="https://www.commvault.com/privacy-policy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className="text-purple-600 hover:text-purple-800 underline"
                 >
-                  Register Now
+                  Privacy Policy
                 </a>
-              </div>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Separator */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <hr className="border-t-2 border-purple-600" />
+      </div>
+
       {/* Speakers Section */}
       <section id="speakers" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
-              Our Speakers
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-              {speakers.map((speaker, index) => (
-                <div key={index} className="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1.35rem)] flex flex-col items-center text-center">
-                  <div className="relative w-full aspect-square mb-3 sm:mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <Image
-                      src={`/images/${speaker.image}`}
-                      alt={speaker.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-xs sm:text-sm md:text-base">{speaker.name}</h3>
-                  <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.title}</p>
-                  <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.company}</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
+            Our Speakers
+          </h2>
+          <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
+            {speakers.map((speaker, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="relative w-2/3 mx-auto aspect-3/4 mb-3 sm:mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                  <Image
+                    src={`/images/${speaker.image}`}
+                    alt={speaker.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              ))}
-            </div>
-            <div className="flex justify-center mt-8 md:mt-12">
-              <a
-                href="https://event.kimcommunication.com/fcf94f65"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Sign Up For SHIFT Now
-              </a>
-            </div>
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm md:text-base">{speaker.name}</h3>
+                <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.title}</p>
+                {/* <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.company}</p> */}
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-start mt-8 md:mt-12">
+            <a
+              href="https://event.kimcommunication.com/SHIFTCommvault"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Sign Up For SHIFT Now
+            </a>
           </div>
         </div>
       </section>
@@ -249,12 +262,12 @@ export default function Home() {
       </section> */}
 
       {/* Register Section with Map */}
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-              {/* Left side - Registration Info */}
-              <div>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center"> */}
+      {/* Left side - Registration Info */}
+      {/* <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Sign up for SHIFT now</h2>
                 <p className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 text-gray-200">
                   Don&apos;t miss out on the opportunity to be part of SHIFT 2026. Register now to secure your spot and stay updated with the latest event details.
@@ -266,42 +279,48 @@ export default function Home() {
                   <p className="font-semibold mt-2 text-pink-400 text-sm sm:text-base">Date: May 7, 2026</p>
                 </div>
                 <a
-                  href="https://event.kimcommunication.com/fcf94f65"
+                  href="https://event.kimcommunication.com/SHIFTCommvault"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Register Here
                 </a>
-              </div>
+              </div> */}
 
-              {/* Right side - Google Map */}
-              <div className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
+      {/* Right side - Google Map */}
+      {/* <div className="relative h-[300px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1525238732704!2d106.79912319245545!3d-6.221781338386618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1495c27f11b%3A0x63e8f2ff2aa408d2!2sFairmont%20Jakarta!5e0!3m2!1sen!2sid!4v1771246081042!5m2!1sen!2sid" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Fairmont Hotel Jakarta Location"></iframe>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs sm:text-sm mb-2 leading-relaxed">
-            This event is co-hosted in partnership with Commvault. As a result Commvault is collecting your personal data when you submit such information as part of the registration process above. For more information on each party&apos;s privacy practices, please see:
-          </p>
-          <p className="text-xs sm:text-sm break-all sm:break-normal">
-            Commvault Statement:{' '}
-            <a
-              href="https://www.commvault.com/privacy-policy"
-              className="text-blue-400 hover:text-blue-300 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.commvault.com/privacy-policy
-            </a>
-          </p>
-          <p className="text-xs mt-4">© 2026 Commvault. All rights reserved.</p>
+      <footer className=" text-white px-4 sm:px-6 lg:px-8 bg-black shadow-lg border-b border-gray-800">
+        <div className="max-w-7xl mx-auto">
+          {/* Logo */}
+          <div className="py-8 flex justify-start">
+            <Image
+              src="/images/Commvault Logo.png"
+              alt="Commvault Logo"
+              width={200}
+              height={40}
+              className="brightness-0 invert"
+            />
+          </div>
+          {/* Divider */}
+          <hr className="border-gray-700" />
+          {/* Bottom row */}
+          <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-8 text-sm">
+              <span>© 2026 Commvault</span>
+              <a href="https://www.commvault.com/legal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Legal</a>
+              <a href="https://www.commvault.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="https://www.commvault.com/legal/trust-center" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Trust Center</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

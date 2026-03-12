@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -25,13 +25,13 @@ export default function Header() {
               alt="Commvault Logo"
               width={180}
               height={40}
-              className="h-8 sm:h-10 w-auto brightness-0 invert"
+              className="h-13 w-auto brightness-0 invert"
               priority
             />
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-4 lg:space-x-8">
+          {/* <nav className="hidden md:flex space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               item.external ? (
                 <a
@@ -53,10 +53,10 @@ export default function Header() {
                 </a>
               )
             ))}
-          </nav>
+          </nav> */}
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -73,12 +73,12 @@ export default function Header() {
                 </svg>
               )}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-t border-gray-800">
             {navItems.map((item) => (
@@ -106,7 +106,7 @@ export default function Header() {
             ))}
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 }
