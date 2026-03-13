@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  The event will feature a host of global cyber resilience leaders, including Commvault APAC leaderships and industry experts from some of the biggest brands in technology and cyber security.
+                  The event will feature a host of cyber resilience leaders, including Commvault APAC leaderships and industry experts from some of the biggest brands in technology and cyber security.
                 </p>
 
                 <div className="mt-4">
