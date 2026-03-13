@@ -7,7 +7,7 @@ export default function Home() {
   const speakers = [
     { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan.png', title: 'Head of Solution Engineering', company: 'Commvault' },
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
-    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan.png', title: 'VP APAC', company: 'Commvault' },
+    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped.png', title: 'VP APAC', company: 'Commvault' },
     { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra.png', title: 'Country Manager', company: 'IDC Indonesia' },
   ];
 
