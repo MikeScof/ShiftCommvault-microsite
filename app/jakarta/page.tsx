@@ -5,9 +5,10 @@ import Header from '../components/Header';
 
 export default function Home() {
   const speakers = [
-    { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan.png', title: 'Head of Solution Engineering', company: 'Commvault' },
+    { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan.png', title: 'Head of Solutions Engineering, Asia', company: 'Commvault' },
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
-    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped.png', title: 'VP APAC', company: 'Commvault' },
+    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped.png', title: 'Vice President, Asia Pacific', company: 'Commvault' },
+    { name: 'Aristides Indarto', image: 'Aristides_Indarto.jpeg', title: 'Solutions Engineer, Singapore and Indonesia', company: 'Commvault' },
     { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra.png', title: 'Country Manager', company: 'IDC Indonesia' },
   ];
 
@@ -125,7 +126,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
             Our Speakers
           </h2>
-          <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             {speakers.map((speaker, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className="relative w-2/3 mx-auto aspect-3/4 mb-3 sm:mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
@@ -138,7 +139,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold text-gray-900 text-xs sm:text-sm md:text-base">{speaker.name}</h3>
                 <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.title}</p>
-                {/* <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.company}</p> */}
+                <p className="text-gray-600 text-xs md:text-sm mt-1">{speaker.company}</p>
               </div>
             ))}
           </div>
