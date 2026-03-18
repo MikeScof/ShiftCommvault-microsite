@@ -5,11 +5,13 @@ import Header from '../components/Header';
 
 export default function Home() {
   const speakers = [
-    { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan.png', title: 'Head of Solutions Engineering, Asia', company: 'Commvault' },
+    { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan_Cropped.png', title: 'Head of Solutions Engineering, Asia', company: 'Commvault' },
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
-    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped.png', title: 'Vice President, Asia Pacific', company: 'Commvault' },
-    { name: 'Aristides Indarto', image: 'Aristides_Indarto.jpeg', title: 'Solutions Engineer, Singapore and Indonesia', company: 'Commvault' },
-    { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra.png', title: 'Country Manager', company: 'IDC Indonesia' },
+    { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped2.png', title: 'Vice President, Asia Pacific', company: 'Commvault' },
+    { name: 'Aristides Indarto', image: 'Aristides_Indarto_Cropped.png', title: 'Solutions Engineer, Singapore and Indonesia', company: 'Commvault' },
+    { name: 'Kevin Mahtani', image: 'Kavin_Mahtani_cropped.jpeg', title: 'Strategic Partnerships Lead, South East Astra', company: 'Commvault' },
+    { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra_Cropped.png', title: 'Country Manager', company: 'IDC Indonesia' },
+    // { name: 'Lucky', image: '', title: '', company: '' },
   ];
 
   const platinumSponsors = [
@@ -126,7 +128,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
             Our Speakers
           </h2>
-          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-4 gap-4 md:gap-8 max-w-5xl mx-auto">
             {speakers.map((speaker, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className="relative w-2/3 mx-auto aspect-3/4 mb-3 sm:mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
