@@ -1,9 +1,14 @@
 'use client';
 
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import Header from '../components/Header';
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const source = searchParams.get('source') || '';
+  const baseRegUrl = 'https://event.kimcommunication.com/SHIFTCommvault';
+  const regUrl = source ? `${baseRegUrl}?o=${encodeURIComponent(source)}` : baseRegUrl;
   const speakers = [
     { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan_Cropped.png', title: 'Head of Solutions Engineering, Asia', company: 'Commvault' },
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
@@ -94,7 +99,7 @@ export default function Home() {
             <div className="flex flex-col items-center  self-start">
               <h3 className="text-3xl font-base text-gray-900 mb-6">Registration Open</h3>
               <a
-                href="https://event.kimcommunication.com/SHIFTCommvault"
+                href={regUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -147,7 +152,7 @@ export default function Home() {
           </div>
           <div className="flex justify-start mt-8 md:mt-12">
             <a
-              href="https://event.kimcommunication.com/SHIFTCommvault"
+              href={regUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -282,7 +287,7 @@ export default function Home() {
                   <p className="font-semibold mt-2 text-pink-400 text-sm sm:text-base">Date: May 7, 2026</p>
                 </div>
                 <a
-                  href="https://event.kimcommunication.com/SHIFTCommvault"
+                  href={regUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
