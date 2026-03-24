@@ -1,12 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
+import { useMemo } from 'react';
 import Header from '../components/Header';
 
+function getSource() {
+  if (typeof window === 'undefined') return '';
+  const params = new URLSearchParams(window.location.search);
+  return params.get('source') || '';
+}
+
 export default function Home() {
-  const searchParams = useSearchParams();
-  const source = searchParams.get('source') || '';
+  const source = useMemo(() => getSource(), []);
   const baseRegUrl = 'https://event.kimcommunication.com/SHIFTCommvault';
   const regUrl = source ? `${baseRegUrl}?o=${encodeURIComponent(source)}` : baseRegUrl;
   const speakers = [
