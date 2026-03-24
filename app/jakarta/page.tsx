@@ -1,19 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-import { useMemo } from 'react';
 import Header from '../components/Header';
 
-function getSource() {
-  if (typeof window === 'undefined') return '';
+const BASE_REG_URL = 'https://event.kimcommunication.com/SHIFTCommvault';
+
+function handleRegClick(e: React.MouseEvent<HTMLAnchorElement>) {
+  e.preventDefault();
   const params = new URLSearchParams(window.location.search);
-  return params.get('source') || '';
+  const source = params.get('source') || '';
+  const url = source ? `${BASE_REG_URL}?o=${encodeURIComponent(source)}` : BASE_REG_URL;
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 export default function Home() {
-  const source = useMemo(() => getSource(), []);
-  const baseRegUrl = 'https://event.kimcommunication.com/SHIFTCommvault';
-  const regUrl = source ? `${baseRegUrl}?o=${encodeURIComponent(source)}` : baseRegUrl;
   const speakers = [
     { name: 'Daniel Tan', image: 'Speaker_Daniel-Tan_Cropped.png', title: 'Head of Solutions Engineering, Asia', company: 'Commvault' },
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
@@ -104,9 +104,8 @@ export default function Home() {
             <div className="flex flex-col items-center  self-start">
               <h3 className="text-3xl font-base text-gray-900 mb-6">Registration Open</h3>
               <a
-                href={regUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={BASE_REG_URL}
+                onClick={handleRegClick}
                 className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Sign Up Now
@@ -157,9 +156,8 @@ export default function Home() {
           </div>
           <div className="flex justify-start mt-8 md:mt-12">
             <a
-              href={regUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={BASE_REG_URL}
+              onClick={handleRegClick}
               className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Sign Up For SHIFT Now
@@ -292,9 +290,8 @@ export default function Home() {
                   <p className="font-semibold mt-2 text-pink-400 text-sm sm:text-base">Date: May 7, 2026</p>
                 </div>
                 <a
-                  href={regUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={BASE_REG_URL}
+                  onClick={handleRegClick}
                   className="inline-block bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Register Here
