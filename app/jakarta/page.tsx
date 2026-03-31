@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 
 const BASE_REG_URL = 'https://event.kimcommunication.com/SHIFTCommvault';
+// https://event.kimcommunication.com/3cb4450b
 
 function handleRegClick(e: React.MouseEvent<HTMLAnchorElement>) {
   e.preventDefault();
@@ -21,7 +22,7 @@ export default function Home() {
     { name: 'Aristides Indarto', image: 'Aristides_Indarto_Cropped.png', title: 'Solutions Engineer, Singapore and Indonesia', company: 'Commvault' },
     { name: 'Kevin Mahtani', image: 'Kavin_Mahtani_cropped.jpeg', title: 'Strategic Partnerships Lead, South East Astra', company: 'Commvault' },
     { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra_Cropped.png', title: 'Country Manager', company: 'IDC Indonesia' },
-    // { name: 'Lucky', image: '', title: '', company: '' },
+    { name: 'Muhammad Nimeiry (Lucky)', image: 'Speaker_Muhammad-Nimeiry-Lucky_Cropped.png', title: 'Country Manager, Indonesia', company: 'Commvault' },
   ];
 
   const platinumSponsors = [
