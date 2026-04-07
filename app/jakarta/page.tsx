@@ -20,9 +20,9 @@ export default function Home() {
     // { name: 'Garreth Russel', image: 'Speaker_Gareth-Russell.png', title: 'Chief Technology Officer', company: 'Commvault' },
     { name: 'Martin Creighan', image: 'Speaker_Martin-Creighan_Cropped2.png', title: 'Vice President, Asia Pacific', company: 'Commvault' },
     { name: 'Aristides Indarto', image: 'Aristides_Indarto_Cropped.png', title: 'Solutions Engineer, Singapore and Indonesia', company: 'Commvault' },
-    { name: 'Kevin Mahtani', image: 'Kavin_Mahtani_cropped.jpeg', title: 'Strategic Partnerships Lead, South East Astra', company: 'Commvault' },
+    { name: 'Kavin Mahtani', image: 'Kavin_Mahtani_cropped.jpeg', title: 'Strategic Partnerships Lead, South East Asia', company: 'Commvault' },
     { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra_Cropped.png', title: 'Country Manager', company: 'IDC Indonesia' },
-    { name: 'Muhammad Nimeiry (Lucky)', image: 'Speaker_Muhammad-Nimeiry-Lucky_Cropped.png', title: 'Country Manager, Indonesia', company: 'Commvault' },
+    { name: 'Muhammad Nimeiry', image: 'Speaker_Muhammad-Nimeiry-Lucky_Cropped.png', title: 'Country Manager, Indonesia', company: 'Commvault' },
   ];
 
   const platinumSponsors = [
