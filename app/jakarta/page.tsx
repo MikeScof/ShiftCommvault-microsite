@@ -1,5 +1,6 @@
 'use client';
 
+import { Fragment } from 'react';
 import Image from 'next/image';
 import Header from '../components/Header';
 
@@ -26,13 +27,13 @@ export default function Home() {
   ];
 
   const platinumSponsors = [
-    { name: 'AWS', logo: 'AWS.png' },
-    { name: 'NetApp', logo: 'NetApp.png' },
+    { name: 'HPE', logo: 'HPE_logo_full.png' },
+    { name: 'SMI', logo: 'smi.png' },
   ];
 
   const goldSponsors = [
-    { name: 'Pure Storage', logo: 'PureStorage.png' },
-    { name: 'Exagrid', logo: 'Exagrid.png' },
+    { name: 'AWS', logo: 'AWS_logo.png' },
+    { name: 'MII', logo: 'MII_Logo.png' },
   ];
 
   return (
@@ -223,55 +224,72 @@ export default function Home() {
       </section> */}
 
       {/* Sponsors Section */}
-      {/* <section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
-              Our Sponsors
-            </h2> */}
+      <section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">
+            Sponsors
+          </h2>
 
-      {/* Platinum Sponsors */}
-      {/* <div className="mb-8 md:mb-12">
-              <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-6 md:mb-8">
-                Platinum Sponsors
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
-                {platinumSponsors.map((sponsor, index) => (
-                  <div key={index} className="flex items-center justify-center bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                    <Image
-                      src={`/images/${sponsor.logo}`}
-                      alt={sponsor.name}
-                      width={250}
-                      height={100}
-                      className="object-contain w-full h-auto max-w-[200px] sm:max-w-[250px]"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div> */}
-
-      {/* Gold Sponsors */}
-      {/* <div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-6 md:mb-8">
-                Gold Sponsors
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
-                {goldSponsors.map((sponsor, index) => (
-                  <div key={index} className="flex items-center justify-center bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          {/* Platinum Sponsors */}
+          <div className="mb-6 md:mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 md:mb-6">
+              Platinum
+            </h3>
+            <div className="flex flex-wrap items-center gap-4 md:gap-6">
+              {platinumSponsors.map((sponsor, index) => (
+                <Fragment key={sponsor.name}>
+                  {index > 0 && (
+                    <div className="w-0.5 h-16 md:h-20 bg-gray-400 rounded-full" />
+                  )}
+                  <div className="flex items-center">
                     <Image
                       src={`/images/${sponsor.logo}`}
                       alt={sponsor.name}
                       width={200}
                       height={80}
-                      className="object-contain w-full h-auto max-w-[150px] sm:max-w-[200px]"
+                      className={`object-contain w-auto ${sponsor.name === 'HPE' ? 'h-10 md:h-14' : 'h-16 md:h-22'}`}
                     />
                   </div>
-                ))}
-              </div>
+                </Fragment>
+              ))}
             </div>
           </div>
+
+          <hr className="border-t-2 border-purple-600" />
+
+          {/* Gold Sponsors */}
+          <div className="mt-6 md:mt-8 mb-6 md:mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 md:mb-6">
+              Gold
+            </h3>
+            <div className="flex flex-wrap items-center gap-4 md:gap-26">
+              {goldSponsors.map((sponsor) => (
+                <div key={sponsor.name} className="flex items-center">
+                  <Image
+                    src={`/images/${sponsor.logo}`}
+                    alt={sponsor.name}
+                    width={200}
+                    height={150}
+                    className="object-contain h-16 md:h-22 w-auto"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <hr className="border-t-2 border-purple-600" />
+
+          <div className="flex justify-start mt-8 md:mt-12">
+            <a
+              href={BASE_REG_URL}
+              onClick={handleRegClick}
+              className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Sign Up For SHIFT Now
+            </a>
+          </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Register Section with Map */}
       {/* <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
