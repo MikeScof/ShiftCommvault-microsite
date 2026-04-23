@@ -25,6 +25,7 @@ export default function Home() {
     { name: 'Mevira Munindra', image: 'Speaker_Mevira Munindra_Cropped.png', title: 'Country Manager', company: 'IDC Indonesia' },
     { name: 'Muhammad Nimeiry', image: 'Speaker_Muhammad-Nimeiry-Lucky_Cropped.png', title: 'Country Manager, Indonesia', company: 'Commvault' },
     { name: 'Alvin Wahyudi', image: 'Alvin_Wahyudi_HPE.jpeg', title: 'Hybrid IT Storage Business Development Manager', company: 'Hewlett Packard Enterprise' },
+    { name: 'Edi Hamlet', image: 'Edi_Hamlet.jpg', title: 'Head of Hybrid AI Infrastructure', company: 'Mitra Integrasi Informatika' },
   ];
 
   const platinumSponsors = [
