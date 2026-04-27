@@ -171,62 +171,97 @@ export default function Home() {
       </section>
 
       {/* Agenda Section */}
-      {/* <section id="agenda" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
-              Event Agenda
-            </h2>
-            <div className="space-y-4 sm:space-y-6"> */}
-      {/* Agenda Items */}
-      {/* <AgendaItem
-                time="08:30 AM – 09:30 AM"
-                title="Registration"
-              />
-              <AgendaItem
-                time="09:20 AM – 09:30 AM"
-                title="Doors Open"
-              />
-              <AgendaItem
-                time="09:30 AM – 09:45 AM"
-                title="[WELCOME KEYNOTE] | The AI Imperative: Resilience Reimagined"
-                speaker="Martin Creighan"
-                description="The AI-driven, agentic enterprise is a different animal. It operates instantaneously, autonomously, and at massive scale. Yet, the data your organisation depends on has never been further from its origin or more complex and vulnerable. Consequently, CIOs and CISOs must rethink the availability, accuracy, integrity, and dependability of its data for this new AI era. In his keynote, Chief Commercial Officer Gary Merrill will delve into how Commvault helps enterprises confidently and safely scale resilience to power a continuous and competitive AI advantage."
-              />
-              <AgendaItem
-                time="09:45 AM – 10:15 AM"
-                title="Industry Speaker"
-              />
-              <AgendaItem
-                time="10:15 AM – 10:35 AM"
-                title="AI Resilience Fireside Chat"
-                speaker="External Speaker: ...  Facilitator: Garreth Russel"
-              />
-              <AgendaItem
-                time="10:35 AM – 11:25 AM"
-                title="[INNOVATION KEYNOTE] | The Next Standard of Resilience"
-                speaker="Garreth Russel"
-                description="AI is transforming the very fabric of cyber resilience. In this mainstage innovation showcase, Commvault’s Chief Technology and AI Officer, Pranay Ahlawat, will unveil breakthrough innovations that redefine how organisations secure, manage, and recover their data in the AI era."
-              />
-              <AgendaItem
-                time="11:25 AM – 12:15 PM"
-                title="Panel Discussion"
-              />
-              <AgendaItem
-                time="12:15 PM – 12:30 PM"
-                title="Locknote"
-              />
-              <AgendaItem
-                time="12:30 PM – 2:30 PM"
-                title="Lunch"
-              />
-            </div>
+      <section id="agenda" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">
+            Agenda
+          </h2>
+          <div className="space-y-4 sm:space-y-6">
+            {/* Agenda Items */}
+            <AgendaItem
+              time="8:15AM - 9:00AM"
+              info="Registration"
+            />
+            <AgendaItem
+              time="9:00AM - 9:05AM"
+              title="[WELCOME ADDRESS]"
+              speaker="Muhammad Nimeiry, Indonesia Commvault"
+            />
+            <AgendaItem
+              time="9:05AM - 9:20AM"
+              title="[KEYNOTE] The AI Imperative: Resilience Reimagined "
+              speaker="Martin Creighan, Commvault"
+              description="The AI-driven, agentic enterprise is a different animal. It operates instantaneously, autonomously, and at massive scale. Yet, the data your organisation depends on has never been further from its origin or more complex and vulnerable. Consequently, CIOs and CISOs must rethink the availability, accuracy, integrity, and dependability of its data for this new AI era. In his keynote, Martin Creighan will delve into how Commvault helps enterprises confidently and safely scale resilience to power a continuous and competitive AI advantage."
+            />
+            <AgendaItem
+              time="9:20AM - 10:10AM"
+              title="[INNOVATION KEYNOTE] The Next Standard of Resilience"
+              speaker="Daniel Tan (DT), Commvault"
+              description="AI is transforming the very fabric of cyber resilience. In this mainstage innovation showcase, Commvault’s Chief Technology and AI Officer, Pranay Ahlawat, will unveil breakthrough innovations that redefine how organisations secure, manage, and recover their data in the AI era."
+            />
+            <AgendaItem
+              time="10:10AM - 10:40AM"
+              title="[INDUSTRY SPEAKER] Cyber Resilience in the Age of AI – An Indonesian Playbook"
+              speaker="Mevira Munindra, IDC Indonesia"
+              description="IDC projects 1 billion AI agents worldwide by 2029, and Indonesian organizations are already feeling the impact on both sides of the ledger. Cyber resiliency has emerged as their top priority for 2026, with building custom AI agents close behind. Yet the same AI wave is fueling a new generation of threats, from LLM-enabled phishing to automated malware, that traditional ransomware defenses cannot stop. Meanwhile, the IT estate has fragmented: on-premises workloads are giving way to a diversified mix of public cloud, SaaS, multi-cloud, and sovereign cloud, expanding the attack surface and complicating recovery."
+            />
+            <AgendaItem
+              time="10:40AM - 10:45AM"
+              title="[DECISION TIME] Identifying the Breach "
+              speaker="Aristides Indarto, Commvault"
+              description="You spot unusual activity—what’s your first move?"
+            />
+            <AgendaItem
+              time="10:45AM - 11:15AM"
+              title="TEA / COFFEE BREAK"
+              info="| Booth Visit"
+            />
+            <AgendaItem
+              time="11:15AM - 11:20AM"
+              title="LUCKY DRAW PART 1"
+            />
+            <AgendaItem
+              time="11:20AM - 11:25AM"
+              title="[DECISION TIME] Analyzing the Impact"
+              speaker="Aristides Indarto, Commvault"
+              description="The breach is real. How do you prioritize next steps?"
+            />
+            <AgendaItem
+              time="11:25AM - 11:40AM"
+              title="[SPONSOR SPOTLIGHT]"
+              speaker="Alvin Wahyudi, Hewlett Packard Enterprise"
+            />
+            <AgendaItem
+              time="11:40AM - 11:45AM"
+              title="[DECISION TIME] Planning & Response"
+              speaker="Aristides Indarto, Commvault"
+              description="Time is critical. Choose how you contain the breach and drive the response."
+            />
+            <AgendaItem
+              time="11:45AM - 12:45PM"
+              title="[PANEL DISCUSSION] Beyond the Hype, Making Cyber Resilience Real"
+              speaker="Moderator: Kavin Mahtani, Commvault, Panelist: Mevira Munindra, IDC Indonesia + Edi Hamlet, Mitra Integrasi Informatika + Daniel Tan, Commvault"
+              description="This panel brings together practitioners to explore how they are building resilience into everyday operations, embedding ResOps, and designing recovery strategies that actually work when tested. It is a practical conversation about what it takes to operate through disruption, not just plan for it, and how resilience becomes a competitive advantage when it is built to perform under pressure."
+            />
+            <AgendaItem
+              time="12:45PM - 13:00PM"
+              title="[LOCKNOTE] Closing"
+              speaker="Martin Creighan, Commvault"
+            />
+            <AgendaItem
+              time="13:00PM - 13:05PM"
+              title="[LUCKY DRAW & GROUP PHOTO]"
+            />
+            <AgendaItem
+              time="13:05PM - 2:05PM"
+              title="[LUNCH]"
+            />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Sponsors Section */}
-      <section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      < section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8" >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">
             Sponsors
@@ -291,7 +326,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Register Section with Map */}
       {/* <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
@@ -354,18 +389,32 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   );
 }
 
 // Agenda Item Component
-function AgendaItem({ time, title, speaker, description }: { time: string; title: string; speaker?: string; description?: string }) {
+// function AgendaItem({ time, title, speaker, description }: { time: string; title: string; speaker?: string; description?: string }) {
+//   return (
+//     <div className="border-l-4 border-purple-600 pl-4 sm:pl-6 py-3 sm:py-4 hover:bg-gray-200 transition-colors rounded-r-lg">
+//       <p className="text-xs sm:text-sm font-semibold text-purple-600 mb-1">{time}</p>
+//       <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug">{title}</h3>
+//       {speaker && <p className="text-xs sm:text-sm text-gray-700 font-medium mb-2">{speaker}</p>}
+//       {description && <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{description}</p>}
+//     </div>
+//   );
+// }
+
+
+function AgendaItem({ time, title, speaker, info, description }: { time: string; title?: string; speaker?: string; info?: string, description?: string }) {
   return (
-    <div className="border-l-4 border-purple-600 pl-4 sm:pl-6 py-3 sm:py-4 hover:bg-gray-200 transition-colors rounded-r-lg">
-      <p className="text-xs sm:text-sm font-semibold text-purple-600 mb-1">{time}</p>
-      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug">{title}</h3>
-      {speaker && <p className="text-xs sm:text-sm text-gray-700 font-medium mb-2">{speaker}</p>}
-      {description && <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{description}</p>}
+    <div >
+      <p className="text-sm sm:text-lg font-semibold mb-1">{time}: &nbsp;
+        {title && <span className="text-sm sm:text-lg font-bold text-purple-900 mb-2 leading-snug">{title}&nbsp;</span>}
+        {speaker && <span className="text-sm sm:text-lg text-black-900 font-bold mb-2">{speaker}&nbsp;</span>}
+        {info && <span className="text-sm sm:text-lg text-black-900 font-medium mb-2">{info}</span>}
+      </p>
+      {description && <p className="text-sm sm:text-lg text-black-600 leading-relaxed">{description}</p>}
     </div>
   );
 }
