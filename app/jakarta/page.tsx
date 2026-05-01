@@ -245,16 +245,16 @@ export default function Home() {
             />
             <AgendaItem
               time="12:45PM - 13:00PM"
-              title="[LOCKNOTE] Closing"
+              title="[LOCKNOTE & GROUP PHOTO] Closing"
               speaker="Martin Creighan, Commvault"
             />
             <AgendaItem
-              time="13:00PM - 13:05PM"
-              title="[LUCKY DRAW & GROUP PHOTO]"
+              time="13:00PM - 13:30PM"
+              title="[LUNCH]"
             />
             <AgendaItem
-              time="13:05PM - 2:05PM"
-              title="[LUNCH]"
+              time="13:30PM - 13:35PM"
+              title="[LUCKY DRAW]"
             />
           </div>
         </div>
